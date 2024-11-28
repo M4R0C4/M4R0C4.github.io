@@ -1,57 +1,47 @@
-# Lista de Links
+# Portfólio Linktree
 
-Crie uma página semelhante ao [Linktree](https://linktr.ee/), onde usuários possam exibir uma lista de seus links pessoais. Esta aplicação irá extrair informações de um arquivo JSON presente no repositório, proporcionando uma interface personalizada que imita uma mini página de perfil.
+Este projeto consiste em uma página de links no estilo Linktree, onde o objetivo é exibir links de forma organizada, com foco em uma apresentação simples e responsiva. A página é alimentada por dados armazenados em um arquivo JSON, permitindo uma fácil configuração de informações sobre o usuário e suas redes sociais.
 
-## 🔨 Requisitos
+## Requisitos
 
-- Desenvolva uma página para exibir links no estilo Linktree.
-- A fonte das informações deve ser um arquivo JSON no repositório do código, com os campos:
-  - `{ name, avatar, description, links, socialLinks }`
-- Exiba o avatar e o nome do(a) usuário(a).
-  - O último sobrenome deve estar em **negrito**.
-- Apresente uma breve descrição do usuário.
-- Mostre uma lista com até 5 links.
-- Apresente uma lista de links para redes sociais.
-    - Sugestões: LinkedIn, Facebook, e Instagram.
-    - A lista de redes sociais no arquivo JSON deve ser configurada de forma que novas redes possam ser adicionadas sem necessidade de mudanças no código.
-- Utilize **HTML**, **CSS** e **JavaScript**. Sem frameworks.
-- Faça o design responsivo, priorizando o mobile-first.
+A página exibe as seguintes informações:
 
-### Deploy
+- **Avatar e nome do usuário**: O nome é exibido com o último sobrenome em negrito.
+- **Descrição breve**: Uma descrição concisa sobre o usuário.
+- **Lista de até 5 links**: Links para produtos, serviços, portfólio, entre outros.
+- **Redes sociais**: Exibição de ícones e links para redes sociais como LinkedIn, Facebook e Instagram. A lista de redes sociais é carregada a partir de um arquivo JSON e pode ser facilmente estendida.
 
-- Ao concluir sua implementação, faça o deploy e submeta sua solução no Codante.io.
+## Funcionalidades
 
-## 🔍 Dicas
+- A página é **mobile-first** e possui design responsivo, garantindo uma boa experiência em dispositivos móveis e desktop.
+- **Avatar** e **nome** do usuário são exibidos com um design agradável e acessível.
+- **Lista de links** configurável via arquivo JSON.
+- **Redes sociais**: Links e ícones são extraídos do arquivo JSON e exibidos dinamicamente na página.
 
-- Estruture o arquivo JSON de forma clara e intuitiva. Isto facilitará a adição ou remoção de links e redes sociais no futuro.
-- Concentre-se em fazer um design limpo e fácil de usar, especialmente em dispositivos móveis.
+## Estrutura do Projeto
 
-## 🎨 Design Sugerido
+- **index.html**: Estrutura HTML da página.
+- **style.css**: Estilos para a página com design responsivo.
+- **script.js**: Script JavaScript que carrega e exibe dados do arquivo JSON.
+- **redes-sociais.json**: Arquivo JSON contendo informações sobre as redes sociais.
 
-Temos uma sugestão de design no Figma. No entanto, sinta-se livre para usar sua criatividade e desenvolver um design único e autêntico.
+### Exemplo do arquivo JSON
 
-🔗[Link do Figma](https://www.figma.com/community/file/1290334353760015149)
-
-![Design sugerido](https://github.com/codante-io/mp-pagina-de-links/assets/6475893/c9517f38-8ad5-479e-8a93-f5d1d5c114e1)
-
-## 👉🏽 Sobre esse mini-projeto
-
-### Tecnologias sugeridas
-
-- **HTML**
-- **CSS**
-- **JavaScript**
-
-### Pré-requisitos
-
-- Conhecimento básico em `HTML`, `CSS`, e `JavaScript`.
-
-## ❓ FAQ
-
-### Posso utilizar bibliotecas ou frameworks adicionais?
-
-O foco deste projeto é utilizar HTML, CSS e JavaScript puro, sem dependências adicionais. Por isso, recomendamos que você não utilize bibliotecas ou frameworks externos. A nossa resolução oficial será implementada dessa forma. Porém você é livre para submeter uma solução utilizando quaisquer ferramentas!
-
-### Como posso melhorar ainda mais meu projeto após finalizar os requisitos?
-
-Considere adicionar interatividades, como animações sutis ao passar o mouse sobre os links ou um modo noturno para a interface. Também pode pensar em desenvolver uma funcionalidade que permita a múltiplos usuários criar e personalizar suas próprias listas de links.
+```json
+{
+  "name": "Mariana Candido",
+  "avatar": "imagens/profile.png",
+  "description": "Página criada inicialmente para demonstrar minhas habilidades de desenvolvimento web.",
+  "links": [
+    { "name": "Produtos", "url": "#" },
+    { "name": "Serviços", "url": "#" },
+    { "name": "Quem sou", "url": "#" },
+    { "name": "Portfólio", "url": "#" },
+    { "name": "Contato", "url": "#" }
+  ],
+  "socialLinks": [
+    { "name": "LinkedIn", "url": "https://www.linkedin.com", "icon": "imagens/linkedin.svg" },
+    { "name": "Instagram", "url": "https://www.instagram.com", "icon": "imagens/instagram.svg" },
+    { "name": "GitHub", "url": "https://www.github.com", "icon": "imagens/github.svg" }
+  ]
+}
