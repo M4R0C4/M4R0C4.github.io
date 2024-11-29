@@ -1,6 +1,6 @@
 # Portfólio Linktree
 
-Este projeto consiste em uma página de links no estilo Linktree, onde o objetivo é exibir links de forma organizada, com foco em uma apresentação simples e responsiva. A página é alimentada por dados armazenados em um arquivo JSON, permitindo uma fácil configuração de informações sobre o usuário e suas redes sociais.
+Este projeto consiste em um desafio da [Codante](https://codante.io/mini-projetos/pagina-de-links) para criar uma página de links no estilo Linktree, onde o objetivo é exibir links de forma organizada, com foco em uma apresentação simples e responsiva. A página é alimentada por dados armazenados em um arquivo JSON, permitindo uma fácil configuração de informações sobre o usuário e suas redes sociais.
 
 ## Requisitos
 
